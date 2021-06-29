@@ -4,21 +4,21 @@
  replicas: 3
 -auditInterval: 60
 +auditInterval: 300
+ auditMatchKindOnly: false
  constraintViolationsLimit: 20
  auditFromCache: false
- disableValidatingWebhook: false
-@@ -20,8 +20,8 @@
+@@ -21,8 +21,8 @@
        pullPolicy: IfNotPresent
        pullSecrets: []
  image:
 -  repository: openpolicyagent/gatekeeper
--  release: v3.4.1
+-  release: v3.5.1
 +  repository: rancher/mirrored-openpolicyagent-gatekeeper
-+  tag: v3.4.1
++  tag: v3.5.1
    pullPolicy: IfNotPresent
    pullSecrets: []
  podAnnotations:
-@@ -68,3 +68,9 @@
+@@ -70,5 +70,11 @@
  pdb:
    controllerManager:
      minAvailable: 1
@@ -28,3 +28,5 @@
 +  kubectl:
 +    repository: rancher/kubectl
 +    tag: v1.20.2
+ service: {}
+ disabledBuiltins:
