@@ -12,9 +12,9 @@
        pullSecrets: []
  image:
 -  repository: openpolicyagent/gatekeeper
--  release: v3.4.0
+-  release: v3.4.1
 +  repository: rancher/mirrored-openpolicyagent-gatekeeper
-+  tag: v3.4.0
++  tag: v3.4.1
    pullPolicy: IfNotPresent
    pullSecrets: []
  podAnnotations:
