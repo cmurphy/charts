@@ -7,7 +7,14 @@
  auditMatchKindOnly: false
  constraintViolationsLimit: 20
  auditFromCache: false
-@@ -21,8 +21,8 @@
+@@ -16,13 +16,13 @@
+   labelNamespace:
+     enabled: true
+     image:
+-      repository: line/kubectl-kustomize
+-      tag: 1.20.4-4.0.5
++      repository: rancher/kubectl
++      tag: v1.20.2
        pullPolicy: IfNotPresent
        pullSecrets: []
  image:
